@@ -27,8 +27,8 @@ const bodyListener = function(callback, options, e) {
   // there is no match if parent visible area is matched by mouse position, so some corner cases might not work as expected
   while (tip === null && target !== null) {
     lastTarget = target;
-  const tip = e.target.getAttribute('data-tip') || null;
-  const forId = e.target.getAttribute('data-for') || null;
+    tip = e.target.getAttribute('data-tip') || null;
+    forId = e.target.getAttribute('data-for') || null;
     target = target.parentElement;
   }
 
